@@ -1,0 +1,149 @@
+body {
+  /* background-color: #130f40; */
+}
+
+nav.mobile-nav {
+  background-color: #f5f6fa;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0 20px;
+  color: #57606f;
+  box-shadow: 0 1px 2px 0px rgba(87, 96, 111, 0.6);
+}
+
+.nav-content {
+  display: flex;
+  /* flex-wrap: wrap; */
+  overflow: auto;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.nav-item span {
+  display: none;
+}
+
+.nav-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcdde1;
+  border: 0.5px solid #cbd1d4;
+  color: #2c3e50;
+  text-decoration: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.nav-item a:hover,
+.nav-item a:focus,
+.nav-item a:active {
+  outline: none;
+  color: white;
+  background-color: #3742fa;
+  border: 0.5px solid #3742fa;
+}
+
+.nav-item a:hover+span,
+.nav-item a:focus+span,
+.nav-item a:active+span {
+  color: #3742fa;
+}
+
+.nav-footer {
+  padding: 10px 0;
+  border-top: 1px solid #747d8c;
+  font-size: 12px;
+}
+
+span.right button {
+  display: none;
+}
+
+@media only screen and (min-width: 820px) {
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f1f1f1;
+  }
+
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #dfe6e9;
+  }
+
+  nav.mobile-nav {
+    display: inline-block;
+    max-height: 97vh;
+  }
+
+  .nav-content {
+    flex-direction: column;
+    max-height: 85vh;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    margin-right: 10px;
+  }
+
+  .nav-item span {
+    display: inline;
+    margin-left: 10px;
+  }
+
+  .nav-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  span.right button {
+    display: block;
+    width: 44px;
+    height: 30px;
+    background-color: #dcdde1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  span.right button:hover,
+  span.right button:focus,
+  span.right button:active {
+    background-color: #3742fa;
+    color: white;
+    outline: none;
+  }
+
+  .nav-footer span.text {
+    display: none;
+  }
+
+  span.none {
+    display: none;
+  }
+}
