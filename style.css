@@ -101,7 +101,7 @@ span.right button {
 
   .nav-content {
     flex-direction: column;
-    max-height: 85vh;
+    max-height: 90vh;
   }
 
   .nav-item {
@@ -112,6 +112,10 @@ span.right button {
   }
 
   .nav-item span {
+    display: none;
+  }
+
+  nav:hover span {
     display: inline;
     margin-left: 10px;
   }
